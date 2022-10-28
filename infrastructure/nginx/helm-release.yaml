@@ -27,6 +27,6 @@ spec:
       #        path: /usr/share/zoneinfo/Oslo
   values:
     controller:
-      replicaCount: 3
+      replicaCount: 4
       admissionWebhooks:
         enabled: false
