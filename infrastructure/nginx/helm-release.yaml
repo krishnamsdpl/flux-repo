@@ -14,19 +14,19 @@ spec:
         name: ingress-nginx
         namespace: flux-system
       interval: 1m
-     # container:
-     #     env: 
-     #        name:tz
-     #         value:Europe/Oslo
-      # volumeMounts:
-      #     - name: tz-config
-      #       mountPath: /etc/localtime
-      # volumes:
-      #     name: tz-config
-      #     hostPath:
-      #       path: /usr/share/zoneinfo/Oslo
+      container:
+          env: 
+             name:tz
+              value:Europe/Oslo
+          volumeMounts:
+             name: tz-config
+             mountPath: /etc/localtime            
+          volumes:
+           name: tz-config
+           hostPath:          
+             path: /usr/share/zoneinfo/Oslo
   values:
     controller:
-      replicaCount: 5
+      replicaCount: 3
       admissionWebhooks:
         enabled: false
