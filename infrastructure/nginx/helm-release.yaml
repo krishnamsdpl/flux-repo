@@ -20,6 +20,6 @@ spec:
               value:Europe/Oslo
   values:
     controller:
-      replicaCount: 5
+      replicaCount: 3
       admissionWebhooks:
         enabled: false
