@@ -16,8 +16,8 @@ spec:
       interval: 1m
       container:
           env: 
-             name:tz
-              value:Europe/Oslo
+              name: tz-config
+              value: Europe/Oslo
           volumeMounts:
              name: tz-config
              mountPath: /etc/localtime            
