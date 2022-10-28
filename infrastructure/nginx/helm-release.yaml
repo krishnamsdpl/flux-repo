@@ -14,10 +14,10 @@ spec:
         name: ingress-nginx
         namespace: flux-system
       interval: 1m
-      container:
-          env: 
-              name:tz
-              value:Europe/Oslo
+     # container:
+     #     env: 
+     #        name:tz
+     #         value:Europe/Oslo
   values:
     controller:
       replicaCount: 3
