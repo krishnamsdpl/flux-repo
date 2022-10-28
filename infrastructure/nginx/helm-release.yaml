@@ -18,13 +18,13 @@ spec:
      #     env: 
      #        name:tz
      #         value:Europe/Oslo
-      volumeMounts:
-          - name: tz-config
-            mountPath: /etc/localtime
-      volumes:
-          name: tz-config
-          hostPath:
-            path: /usr/share/zoneinfo/Oslo
+      # volumeMounts:
+      #     - name: tz-config
+      #       mountPath: /etc/localtime
+      # volumes:
+      #     name: tz-config
+      #     hostPath:
+      #       path: /usr/share/zoneinfo/Oslo
   values:
     controller:
       replicaCount: 5
