@@ -14,9 +14,9 @@ spec:
         name: ingress-nginx
         namespace: flux-system
       interval: 1m
-        
+
   values:
     controller:
-      replicaCount: 10
+      replicaCount: 2
       admissionWebhooks:
         enabled: false
